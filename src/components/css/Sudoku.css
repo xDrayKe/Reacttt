@@ -1,0 +1,62 @@
+.sudoku-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 10vh; */
+    /* Pour centrer verticalement dans la fenêtre */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-gap: 2px;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+.sudoku-row {
+    display: contents;
+}
+
+.sudoku-cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.sudoku-cell:disabled {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.sudoku-cell:nth-child(3n) {
+    border-right: 2px solid black;
+}
+
+.sudoku-row:nth-child(3n) .sudoku-cell {
+    border-bottom: 2px solid black;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}

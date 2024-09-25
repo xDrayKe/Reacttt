@@ -1,0 +1,41 @@
+.connect4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 10vh; */
+    /* Pour centrer verticalement dans la fenêtre */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.gridConnect4 {
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: repeat(6, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.squareConnect4 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

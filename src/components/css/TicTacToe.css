@@ -1,0 +1,47 @@
+.tictactoe {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.gridTictactoe {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    /* 3 colonnes de 100px chacune */
+    grid-template-rows: repeat(3, 100px);
+    /* 3 lignes de 100px chacune */
+    gap: 5px;
+    /* Espace entre les carrés */
+    margin: 20px auto;
+    max-width: 320px;
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.square:hover {
+    background-color: #ddd;
+}
+
+.reset-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.reset-button:hover {
+    background-color: #555;
+}
